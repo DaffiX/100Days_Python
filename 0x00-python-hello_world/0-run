@@ -1,0 +1,9 @@
+#!/bin/bash
+# Bash script that runs a Python Script
+
+# The path of the file will be saved 
+
+cd /home/daffy/100Days_Python/0x00-python-hello_world
+
+# Run the python script 
+python3 pycode.py

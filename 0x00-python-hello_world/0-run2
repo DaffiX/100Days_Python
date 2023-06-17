@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Set the value of PYFILE o the Python file name - so you may reference that in the future
+
+export PYFILE="pycode.py"
+
+# Run the Python script - which is passed as arg
+
+python3 "$PYFILE"
