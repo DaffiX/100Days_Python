@@ -26,6 +26,55 @@ python3 "$PYFILE"
 1. Run inline: Write a Shell script that runs Python code.
 
 The Python code will be saved in the environment variable $PYCODE
+The python3 -c command is used to run the Python code specified in the $PYCODE environment variable. The -c flag tells the Python interpreter to execute the code provided as a command-line argument.
+```bash 
+#!/bin/bash
+export PYCODE="print('This is printed')"
+
+# Run the Python code stored in the PYCODE environment variable
+python3 -c "$PYCODE"
+```
+2. Hello, print: Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+
+```python
+$./2-print.py 
+Programming is like building a multilingual puzzle
+```
+3. Print integer: Complete this source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
+
+- You can find the source code [here](https://github.com/alx-tools/0x00.py/blob/master/3-print_number.py)
+- The output of the script should be:
+- the number, followed by Battery street,followed by a new line
+- You are not allowed to cast the variable number into a string
+- Your code must be 3 lines long
+- You have to use f-strings tips
+
+```
+$ ./3-print_number.py
+98 Battery street
+```
+
+4. Print Formated number: Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
+```
+$ ./4-print_float.py
+Float: 3.14
+```
+
+5.  Print string: Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
+
+You can find the source code here
+The output of the program should be:
+- 3 times the value of str
+- followed by a new line
+- followed by the 9 first characters of str
+- followed by a new line
+- You are not allowed to use any loops or conditional statement
+- Your program should be maximum 5 lines long
+```
+$ ./5-print_string.py 
+Holberton SchoolHolberton SchoolHolberton School
+Holberton
+```
 ## Authors
 
 [@selemandaffy](https://www.github.com/daffix)
@@ -34,11 +83,12 @@ The Python code will be saved in the environment variable $PYCODE
 
 ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UC0TUPSakz3GnB4nmbN0RXKw)
 ## License
+Disclaimer:
 
+The materials and questions provided in this repository are the property of ALX Africa and are intended solely for educational purposes as part of the ALX Software Engineering Program. These materials are designed to support the learning journey of students enrolled in the ALX SE Program and should not be reproduced, distributed, or shared without proper authorization from ALX Africa.
 
+Please note that the content provided in this repository may be subject to change, and it is the responsibility of the ALX SE Program students to ensure they are using the most up-to-date materials provided by ALX Africa.
 
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+For more information about the ALX Africa programs, please visit their official website at [ALX Africa](https://www.alxafrica.com/)
 
 
