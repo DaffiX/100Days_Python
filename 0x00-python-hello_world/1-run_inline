@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export PYCODE="print('This is a py code printed run by the script usin -c command')"
+
+# run the python code stored in the PYCODE
+
+python3 -c "$PYCODE"
