@@ -16,6 +16,8 @@ while url:
             print(character["name"])
 
         url = data["next"] # move to next page of result
+        #visualize the pagination 
+        print(f"Fetched data from : {url}")
     else:
         print(f"Request failed with status code: {response.status_code}")
         break
