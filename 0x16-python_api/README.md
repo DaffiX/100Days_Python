@@ -36,7 +36,8 @@ While your application might be more complex, in this example you’ll create yo
 ```nano ~/myproject/myproject.py```
 
 The Application code:
-```from flask import Flask
+```bash
+from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
@@ -44,17 +45,24 @@ def hello():
     return "<h1 style='color:blue'>Hello There!</h1>"
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')```
+    app.run(host='0.0.0.0')
+    
+```
 
 then allo UFW
-```sudo ufw allow 5000```
+```bash 
+sudo ufw allow 5000
+```
 
 Now test the app:
-```python myproject.py```
+```bash 
+python myproject.py
+```
 
 ### INSTALL FLASK - ubuntu 22.04 LTS
 First, install wheel with the local instance of pip to ensure that your packages will install even if they are missing wheel archives:
-```pip install wheel
+```bash
+pip install wheel
 ```
 
 - Next, install Flask and uWSGI:
