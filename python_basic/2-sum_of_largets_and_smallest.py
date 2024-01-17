@@ -21,3 +21,12 @@ result = calculate_sum(numbers)
 
 
 print(result)
+
+
+'''Codding like a pro'''
+def calculate_sum2(lst):
+    return sum((min(lst), max(lst)))
+
+numbers = [5,6,3,8,9]
+result = calculate_sum2(numbers)
+print(result)
